@@ -1,0 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;;
+}
+
+header{
+    border-bottom: solid white 1px;
+    nav{
+        background-color: black;
+        a{
+            text-transform: uppercase;
+            img{
+                object-fit: cover;
+                height: 5rem;
+            }
+        }
+    }
+}
+
+.menu{
+    width: 100%;
+    justify-content: end
+}
+
+.social{
+    h5{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    label{
+        a{
+            line-height: 20px;
+        }
+    }
+    i{
+        font-size: 35px;
+        margin: 15px;
+        color:white
+    }
+}
+
+.copy{
+    line-height: 20px;
+    padding: 12px;
+    p{
+        font-weight: bold
+    }
+}
+
+footer{
+    margin-top: 4rem
+}
+
+@import 'base/index';
+@import 'base/productos';
+@import 'base/nosotros'

@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+}
+
+
+
+main{
+    min-height: 100vh;
+}
+
+.img{
+
+    min-height: 60vh;
+    background-image: url("/imagenes/fondoInfo3.jpg");
+    border-top: solid 2px white;
+    border-bottom:solid 2px white ;
+
+}
+
+.info{
+    margin: 5rem;
+    background-color: white;
+    min-height: 10rem;
+    text-align: center;
+    border-radius: 10px;
+
+    h5{
+        margin-bottom: 1.2rem;
+        padding-top: 5px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 0.8rem;
+        margin: 0.2rem;
+        i{
+            font-size: 1.2rem;
+            padding-right: 0.4rem;
+        }
+    }
+    .pago-entrega{
+        padding-top: 2rem ;
+    }
+}
+
+.content{
+
+    padding-top: 180px;
+    width: 100%;
+    h2,h3{
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width:767px){
+
+    .img{
+        background-image: url("../imagenes/fondoInfo3-mobile.jpg");
+    }
+
+    #nosotros{
+        img{
+            height:250px;
+            width: 350px;
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+h2,h4{
+    color: white;
+    text-transform: uppercase;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.modeloUno, .modeloDos{
+    margin-top: 3rem;
+}
+
+.imagenesModeloUno, .imagenesModeloDos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    // background-color: white;
+    img{
+        margin: 10px 0px;
+        height: 200px;
+        object-fit: cover;
+        // gap: 2rem;
+    }
+}
+
+.infoModeloUno, .infoModeloDos{
+
+    p{
+        color: white;
+    }
+    .dimensiones{
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 767px){
+
+    .imagenesModeloUno, .imagenesModeloDos{
+
+        grid-template-columns: repeat(2, 1fr);
+
+        img{
+            height: 150px;
+            margin: 10px;
+        }
+    }
+}
+
+@media(max-width: 572px){
+
+    .imagenesModeloUno, .imagenesModeloDos{
+
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+
+        img{
+            height: 150px;
+            margin: 10px;
+        }
+    }
+}
