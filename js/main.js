@@ -9,11 +9,11 @@ const contenedorModeloDos = document.querySelector(".imagenesModeloDos");
 
 const mostrarProductos = ()=>{
 
-    // fetch(url)
-    // .then((res)=>res.json())
-    // .then((productos)=>{
+    fetch(url)
+    .then((res)=>res.json())
+    .then((productos)=>{
 
-        kayaks.forEach((kayak)=>{
+        productos.forEach((kayak)=>{
 
             const div = document.createElement("div");
             div.classList.add("divProductos")
@@ -24,7 +24,7 @@ const mostrarProductos = ()=>{
 
             contenedorProductos.appendChild(div);
         })
-    // })
+    })
 }
 
 const mostrarModelos = () => {
@@ -34,18 +34,6 @@ const mostrarModelos = () => {
     contenedorModeloDos.innerHTML = `<img src="${kayaks[1].imagen}"> <img src="${kayaks[1].imagen2}"> <img src="${kayaks[1].imagen3}"> <img src="${kayaks[1].imagen4}"></img> <img src="${kayaks[1].imagen5}"> <img src="${kayaks[1].imagen6}">`;
 }
 
-// const mostrarModal1 = () => {
-
-//     $('#ventanaInfoModelo1').modal();
-// }
-
-// const clickImagenes = () => {
-
-//     imgInfo.addEventListener("click", () => {
-
-//         mostrarModal1();
-//     })
-// }
 
 function init(){
     // mostrarProductos()

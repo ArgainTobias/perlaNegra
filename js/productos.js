@@ -4,7 +4,7 @@ const kayaks = [
         id:1,
         modelo:"Rojo",
         precio:30000,
-        imagen:"../../imagenes/modeloUnaPersona.jpg",
+        imagen:"../imagenes/modeloUnaPersona.jpg",
         imagen2:"../../imagenes/modeloUnaPersona2.jpg",
         imagen3:"../../imagenes/modeloUnaPersona3.jpg",
         imagen4:"../../imagenes/modeloUnaPersona4.jpg",
