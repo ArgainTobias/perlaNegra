@@ -21,13 +21,20 @@ header{
 
 .menu{
     width: 100%;
-    justify-content: end
+    justify-content: end;
+    a{
+        color: white;
+    }
+    a:hover{
+        color: #343A40;
+    }
 }
 
 .social{
     h5{
         text-transform: uppercase;
         font-weight: bold;
+        color: white;
     }
     label{
         a{
@@ -39,13 +46,17 @@ header{
         margin: 15px;
         color:white
     }
+    i:hover{
+        color: black;
+    }
 }
 
 .copy{
     line-height: 20px;
     padding: 12px;
     p{
-        font-weight: bold
+        font-weight: bold;
+        color:white;
     }
 }
 

@@ -31,7 +31,15 @@ h2,h4{
     }
 }
 
-@media(max-width: 767px){
+@media(max-width:1199px){
+
+    .imagenesModeloUno, .imagenesModeloDos{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 992px){
 
     .imagenesModeloUno, .imagenesModeloDos{
 
@@ -40,6 +48,11 @@ h2,h4{
         img{
             height: 150px;
             margin: 10px;
+            width: 90%;
+            margin: 10px 5px;
+        }
+        .imgConInfo{
+            width: auto;
         }
     }
 }
