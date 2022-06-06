@@ -12,11 +12,13 @@ h2,h4{
 .imagenesModeloUno, .imagenesModeloDos{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    // background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
     img{
         margin: 10px 0px;
         height: 200px;
         object-fit: cover;
+        border-radius: 5px;
         // gap: 2rem;
     }
 }

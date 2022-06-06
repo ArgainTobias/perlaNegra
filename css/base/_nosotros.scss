@@ -6,11 +6,17 @@
 
 .quienes, .que-hacemos{
     margin-bottom: 6rem;
+    text-align: center;
     p{
         margin-top: 1rem;
     }
     .texto{
         padding: 0 2rem;
+    }
+    video{
+        height: 300px;
+        border: solid 1px white;
+        border-radius: 5px;
     }
 }
 
@@ -18,6 +24,11 @@
 
     text-align: center;
     margin: 1rem;
+    .container-contacto{
+        background-color: #343A40;
+        padding: 1rem;
+        border-radius: 5px;
+    }
     h2,h3,h4{
         color:white;
         text-transform: uppercase;
@@ -41,7 +52,7 @@
             a:hover{
                 text-decoration: none;
                 background-color: gray;
-                border: solid 0.1rem black;
+                border: solid 0.1rem white;
             }
             i{
                 padding: 5px;
@@ -57,6 +68,7 @@
         }
         iframe{
             margin-bottom: 0.8rem;
+            border-radius: 5px;
         }
         a{
             color: white;
@@ -68,7 +80,32 @@
         a:hover{
             text-decoration: none;
             background-color: gray;
-            border: solid 0.1rem black;
+            border: solid 0.1rem white;
+        }
+    }
+}
+
+@media(max-width:767px){
+    
+    .que-hacemos{
+
+        video{
+            height: 230px;
+            margin-top: 1rem;
+        }
+    }
+
+    #contacto{
+        .container-contacto{
+            .datos{
+                margin: 2rem 0;
+                .infoContacto{
+                    padding-top: 20px;
+                    a{
+                        margin-top: 1rem;
+                    }
+                }
+            }
         }
     }
 }

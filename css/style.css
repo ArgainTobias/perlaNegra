@@ -14,6 +14,32 @@ header nav {
   background-color: black;
 }
 
+header nav .primer-ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+header nav .primer-ul li {
+  list-style: none;
+  text-align: center;
+}
+
+header nav .primer-ul .li-productos .segundo-ul {
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+}
+
+header nav .primer-ul .li-productos .segundo-ul li {
+  display: none;
+}
+
+header nav .primer-ul .li-productos:hover .segundo-ul li {
+  display: block;
+}
+
 header nav a {
   text-transform: uppercase;
 }
@@ -151,6 +177,8 @@ h2, h4 {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .imagenesModeloUno img, .imagenesModeloDos img {
@@ -158,6 +186,7 @@ h2, h4 {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .infoModeloUno p, .infoModeloDos p {
@@ -211,6 +240,7 @@ h2, h4 {
 
 .quienes, .que-hacemos {
   margin-bottom: 6rem;
+  text-align: center;
 }
 
 .quienes p, .que-hacemos p {
@@ -221,9 +251,21 @@ h2, h4 {
   padding: 0 2rem;
 }
 
+.quienes video, .que-hacemos video {
+  height: 300px;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
 #contacto {
   text-align: center;
   margin: 1rem;
+}
+
+#contacto .container-contacto {
+  background-color: #343A40;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 #contacto h2, #contacto h3, #contacto h4 {
@@ -256,7 +298,7 @@ h2, h4 {
 #contacto .datos .infoContacto a:hover {
   text-decoration: none;
   background-color: gray;
-  border: solid 0.1rem black;
+  border: solid 0.1rem white;
 }
 
 #contacto .datos .infoContacto i {
@@ -274,6 +316,7 @@ h2, h4 {
 
 #contacto .mapa iframe {
   margin-bottom: 0.8rem;
+  border-radius: 5px;
 }
 
 #contacto .mapa a {
@@ -287,6 +330,22 @@ h2, h4 {
 #contacto .mapa a:hover {
   text-decoration: none;
   background-color: gray;
-  border: solid 0.1rem black;
+  border: solid 0.1rem white;
+}
+
+@media (max-width: 767px) {
+  .que-hacemos video {
+    height: 230px;
+    margin-top: 1rem;
+  }
+  #contacto .container-contacto .datos {
+    margin: 2rem 0;
+  }
+  #contacto .container-contacto .datos .infoContacto {
+    padding-top: 20px;
+  }
+  #contacto .container-contacto .datos .infoContacto a {
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

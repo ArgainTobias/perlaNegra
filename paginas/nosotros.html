@@ -13,67 +13,78 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../imagenes/perlaNegraLogo.ico" alt="" width="50" height="44">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="menu navbar-nav">
-                  <a class="nav-link active" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="./productos.html">Productos</a>
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="#contacto">Contacto</a>
-                </div>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                  <img src="../imagenes/perlaNegraLogo.ico" alt="" width="50" height="44">
+              </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="menu navbar-nav">
+                <ul class="primer-ul">
+                  <li><a class="nav-link active" href="../index.html">Inicio</a></li>
+                  <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                  <li class="li-productos">
+                    <a class="nav-link" href="#">Productos</a>
+                    <ul class="segundo-ul">
+                      <li><a class="nav-link" href="./productos.html">Kayaks</a></li>
+                      <li><a class="nav-link" href="./accesorios.html">accesorios</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="nav-link" href="./nosotros.html#contacto">Contacto</a></li>
+                </ul>
               </div>
             </div>
-        </nav>
+          </div>
+      </nav>
     </header>
+
     <main>
           
         <section class="nosotros py-4">
             <div class="quienes container">
                 <div class="row">
-                    <div class="col-6 bg-light">
+                    <div class="col-md-6 col-sm-12  bg-light">
                     </div>
-                <div class="texto col-6 text-white">
+                <div class="texto col-md-6 col-sm-12  text-white">
                     <h3 class="display-4 text-center">¿Quiénes somos?</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nemo sunt laudantium maxime fugit! Nisi accusantium molestias temporibus facere, repellendus optio qui unde quia deleniti, voluptatem ipsum voluptates, corrupti eum! Autem perspiciatis, numquam nemo labore sed nesciunt quod, ipsa omnis asperiores aperiam velit aspernatur corrupti laudantium error. Natus, architecto qui.</p>
+                    <p>Somos una empresa familiar ubicada en Buenos Aires, Argentina.
+                        Perla Negra se inició en el mundo de los kayaks con el objetivo de ofrecer un producto del cual el mercado carecía, y también por la pasión que nos genera este rubro (kayakismo, pesca, aventura).</p>
                 </div>
             </div>
             </div>
 
             <div class="que-hacemos container">
                 <div class="row">
-                    <div class="texto col-6 text-white">
-                        <h3 class="display-4 text-center">Qué hacemos?</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nemo sunt laudantium maxime fugit! Nisi accusantium molestias temporibus facere, repellendus optio qui unde quia deleniti, voluptatem ipsum voluptates, corrupti eum! Autem perspiciatis, numquam nemo labore sed nesciunt quod, ipsa omnis asperiores aperiam velit aspernatur corrupti laudantium error. Natus, architecto qui.</p>
+                    <div class="texto col-md-6 col-sm-12  text-white">
+                        <h3 class="display-4 text-center">¿Qué hacemos?</h3>
+                        <p>Nuestros productos son fabricados en un proceso de rotomoldeado profesional con distintos tratamientos para una mayor calidad. Contamos con 2 modelos hasta el momento, que fueron diseñados por ingenieros navales. Estos poseen una estabilidad única para ofrecer la mayor seguridad en el agua.</p>
                     </div>
-                    <div class="col-6 bg-light">
+                    <div class="col-md-6 col-sm-12 ">
+                      <video src="../videos/video-que-hacemos.mp4" controls></video>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="contacto">
-            <div class="content-fluid">
+            <div class="container-contacto container-fluid">
               <div class="row">
                 <div class="mapa col-md-6 col-sm-12">
                   <h3>¿Dónde estamos?</h3>
-                  <iframe width="300" height="225" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.566446900367744%2C-34.64377407021087%2C-58.564392328262336%2C-34.64244565054404&amp;layer=mapnik" style="border: 1px solid black" class="iframe-nosotros"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.9408244735905!2d-58.5606575012207!3d-34.63093566894531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb808b1849e7b%3A0x26447cece74e2842!2sDiaz%20Velez%201400%2C%20B1707CXX%20Villa%20Sarmiento%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654541987726!5m2!1ses!2sar" width="350" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <br>
-                  <small class="masGrande-nosotros"><a href="https://www.openstreetmap.org/#map=19/-34.64311/-58.56542">Ver mapa más grande</a></small>
+                  <small class="masGrande-nosotros"><a href="https://goo.gl/maps/6Qa3qGxv76CCnbos7" target="_blank">Ver mapa más grande</a></small>
                 </div>
                 <div class="datos col-md-6 col-sm-12">
                     <h3>Nuestra info</h3>
                     <div class="infoContacto">
-                      <p><i class="fa-solid fa-phone"></i> 44640000</p>
-                      <p><i class="fa-solid fa-envelope"></i> perla@gmail.com</p>
-                      <p><i class="fa-solid fa-id-card-clip"></i> Av. República 460</p>
-                      <a href=" https://wa.me/1161800101?text=Hola,%20me%20gustaría%20hacerles%20una%20consulta%20" target="_blank"><i class="fa-brands fa-whatsapp pl-2"></i> Hacenos tu consulta</a>
+                      <p><i class="fa-solid fa-phone"></i> 1132051853</p>
+                      <p><i class="fa-solid fa-envelope"></i> elperlanegrakayak@gmail.com</p>
+                      <p><i class="fa-solid fa-id-card-clip"></i> Av. Diaz Velez 790 (esquina acceso oeste)</p>
+                      <a href=" https://wa.me/1536405767?text=Hola,%20me%20gustaría%20hacerles%20una%20consulta%20" target="_blank"><i class="fa-brands fa-whatsapp pl-2"></i> Hacenos tu consulta</a>
                     </div>
                 </div>
               </div>

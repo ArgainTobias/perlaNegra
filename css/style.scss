@@ -9,6 +9,38 @@ header{
     border-bottom: solid white 1px;
     nav{
         background-color: black;
+        .primer-ul{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            li{
+                list-style: none;
+                text-align: center;
+            }
+
+            .li-productos{
+                .segundo-ul{
+                    position: absolute;
+                    background-color: black;
+                    border-radius: 5px;
+                    // border: solid 1px white;
+                    // border-top: none;
+
+                    li{
+                        display: none;
+                    }
+                }
+            }
+            
+
+            .li-productos:hover{
+                .segundo-ul{
+                    li{
+                        display:block;
+                    }
+                }
+            }
+            
+        }
         a{
             text-transform: uppercase;
             img{
@@ -61,7 +93,7 @@ header{
 }
 
 footer{
-    margin-top: 4rem
+    margin-top: 4rem;
 }
 
 @import 'base/index';
