@@ -10,9 +10,20 @@ main{
 
 .img{
     min-height: 60vh;
-    background-image: url("../imagenes/fondoInfo3.jpg");
-    border-top: solid 2px white;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url("../imagenes/fondoInfo3.jpg") ;
+    background-size: cover;
+    border-top: solid 1px white;
     border-bottom:solid 2px white ;
+    display: grid;
+    place-content: center;
+    .content{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        h2,h3{
+            text-transform: uppercase;
+        }
+    }
 }
 
 .info{
@@ -40,20 +51,7 @@ main{
     }
 }
 
-.content{
-
-    padding-top: 180px;
-    width: 100%;
-    h2,h3{
-        text-transform: uppercase;
-    }
-}
-
 @media(max-width:767px){
-
-    .img{
-        background-image: url("../imagenes/fondoInfo3-mobile.jpg");
-    }
 
     #nosotros{
         img{

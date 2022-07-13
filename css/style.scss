@@ -6,59 +6,50 @@
 }
 
 header{
-    border-bottom: solid white 1px;
-    nav{
-        background-color: black;
-        .primer-ul{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100px;
+    place-content: center;
+    border-bottom: solid 1px #fff;
+
+    .div-img{
+        a{
+            img{
+                height: 80px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+    .menu-nav{
+        label{
+            display: none;
+        }
+        input{
+            display: none;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            text-align: center;
             li{
                 list-style: none;
-                text-align: center;
-            }
-
-            .li-productos{
-                .segundo-ul{
-                    position: absolute;
-                    background-color: black;
-                    border-radius: 5px;
-                    // border: solid 1px white;
-                    // border-top: none;
-
-                    li{
-                        display: none;
-                    }
+                color: white;
+                margin: 1.5rem;
+                a{
+                    color: white;
+                    display: grid;
+                    place-content: center;
+                    text-transform: uppercase;
+                }
+                a:hover{
+                    text-decoration: none;
+                    color: gray;
                 }
             }
-            
-
-            .li-productos:hover{
-                .segundo-ul{
-                    li{
-                        display:block;
-                    }
-                }
-            }
-            
         }
-        a{
-            text-transform: uppercase;
-            img{
-                object-fit: cover;
-                height: 5rem;
-            }
-        }
-    }
-}
-
-.menu{
-    width: 100%;
-    justify-content: end;
-    a{
-        color: white;
-    }
-    a:hover{
-        color: #343A40;
     }
 }
 
@@ -98,4 +89,5 @@ footer{
 
 @import 'base/index';
 @import 'base/productos';
-@import 'base/nosotros'
+@import 'base/nosotros';
+@import 'base/mediaQueries'
