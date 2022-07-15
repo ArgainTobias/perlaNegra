@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Lora', serif;;
+    font-family: 'Lora', serif;
 }
 
 header{
@@ -59,11 +59,6 @@ header{
         font-weight: bold;
         color: white;
     }
-    label{
-        a{
-            line-height: 20px;
-        }
-    }
     i{
         font-size: 35px;
         margin: 15px;
@@ -75,8 +70,8 @@ header{
 }
 
 .copy{
-    line-height: 20px;
-    padding: 12px;
+    display: grid;
+    place-content: center;
     p{
         font-weight: bold;
         color:white;

@@ -18,11 +18,20 @@
             ul{
                 display: none;
                 flex-direction: column;
+                justify-content: center;
                 position: absolute;
                 background-color: #000;
                 width: 100%;
+                height: 90vh;
+                top: 100px;
                 left: 0;
+                transition: all .5s;
             }
+
+            label{
+                cursor: pointer;
+            }
+
             #check:checked + ul{
                 display: flex;
             }

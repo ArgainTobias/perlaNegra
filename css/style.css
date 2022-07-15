@@ -70,10 +70,6 @@ header .menu-nav ul li a:hover {
   color: white;
 }
 
-.social label a {
-  line-height: 20px;
-}
-
 .social i {
   font-size: 35px;
   margin: 15px;
@@ -85,8 +81,9 @@ header .menu-nav ul li a:hover {
 }
 
 .copy {
-  line-height: 20px;
-  padding: 12px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 .copy p {
@@ -99,7 +96,7 @@ footer {
 }
 
 body {
-  background-color: black;
+  background-color: #000;
 }
 
 main {
@@ -185,11 +182,18 @@ h2, h4 {
 }
 
 .imagenesModeloUno img, .imagenesModeloDos img {
-  margin: 10px 0px;
+  margin: 10px 10px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.imagenesModeloUno img:hover, .imagenesModeloDos img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .infoModeloUno p, .infoModeloDos p {
@@ -386,10 +390,20 @@ h2, h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     background-color: #000;
     width: 100%;
+    height: 90vh;
+    top: 100px;
     left: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header .menu-nav label {
+    cursor: pointer;
   }
   header .menu-nav #check:checked + ul {
     display: -webkit-box;
