@@ -2,7 +2,7 @@ const kayaks = [
 
     {
         id:1,
-        modelo:"Rojo",
+        modelo:"Uno",
         precio:30000,
         imagen:"../imagenes/modeloUnaPersona.jpg",
         imagen2:"../imagenes/modeloUnaPersona2.jpg",
@@ -14,7 +14,7 @@ const kayaks = [
     },
     {
         id:2,
-        modelo:"Rojo",
+        modelo:"Dos",
         precio:30000,
         imagen:"../imagenes/modeloDosPersonas.jpg",
         imagen2:"../imagenes/modeloDosPersonas2.jpg",
@@ -24,4 +24,23 @@ const kayaks = [
         imagen6:"../imagenes/modeloDosPersonas6.jpg",
     },
 
+]
+
+const accesorios = [
+    {
+        nombre:"Tambucho",
+        imagen:"../imagenes/tambucho.png",
+    },
+    {
+        nombre:"Tapa central",
+        imagen:"../imagenes/tapaCentral.jpeg",
+    },
+    {
+        nombre:"Tapa central redonda",
+        imagen:"../imagenes/tapaCentralRedonda.jpeg",
+    },
+    {
+        nombre:"Bochas",
+        imagen:"../imagenes/bochas.png",
+    }
 ]

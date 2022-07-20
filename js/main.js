@@ -1,31 +1,7 @@
 const contenedorProductos = document.querySelector(".productos");
-const url = "./productos.json";
 const contenedorModeloUno = document.querySelector(".imagenesModeloUno");
 const contenedorModeloDos = document.querySelector(".imagenesModeloDos");
-// const imgInfo = document.querySelector(".imagenInfo");
-// const imgInfo2 = document.querySelector(".imagenInfo2");
 
-
-
-const mostrarProductos = ()=>{
-
-    fetch(url)
-    .then((res)=>res.json())
-    .then((productos)=>{
-
-        productos.forEach((kayak)=>{
-
-            const div = document.createElement("div");
-            div.classList.add("divProductos")
-            div.innerHTML = `
-            <img src="${kayak.imagen}" style="height:200px">
-            <h4 class="modelo">${kayak.modelo}</h4>
-            <h4 class="precio">$${kayak.precio}</h4>`
-
-            contenedorProductos.appendChild(div);
-        })
-    })
-}
 
 const mostrarModelos = () => {
 
@@ -36,10 +12,7 @@ const mostrarModelos = () => {
 
 
 function init(){
-    // mostrarProductos()
     mostrarModelos();
-    // clickImagenes();
-
 }
 
 init();
