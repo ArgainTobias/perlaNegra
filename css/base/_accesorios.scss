@@ -1,7 +1,7 @@
 .accesorios {
   .contenedor-divs-accesorio {
     display: grid;
-    grid-template-columns: repeat(2, 0.3fr);
+    grid-template-columns: repeat(2, .3fr);
     place-content: center;
 
     .div-accesorio {
