@@ -33,11 +33,11 @@ const accesorios = [
     },
     {
         nombre:"Tapa central",
-        imagen:"../imagenes/tapaCentral.jpeg",
+        imagen:"../imagenes/tapaCentral.png",
     },
     {
         nombre:"Tapa central redonda",
-        imagen:"../imagenes/tapaCentralRedonda.jpeg",
+        imagen:"../imagenes/tapaCentralRedonda.png",
     },
     {
         nombre:"Bochas",

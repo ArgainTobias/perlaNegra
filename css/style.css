@@ -64,10 +64,6 @@ header .menu-nav ul li a:hover {
   color: gray;
 }
 
-main {
-  overflow-x: hidden;
-}
-
 .social h5 {
   text-transform: uppercase;
   font-weight: bold;
@@ -101,6 +97,7 @@ footer {
 
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 
 main {
@@ -445,8 +442,8 @@ h2, h4 {
   height: 200px;
   border-radius: 5px;
   margin: 1rem;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -459,6 +456,13 @@ h2, h4 {
 .accesorios .contenedor-divs-accesorio .div-accesorio h4 {
   color: black;
   text-align: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .accesorios .contenedor-divs-accesorio {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */
