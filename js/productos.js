@@ -40,7 +40,7 @@ const accesorios = [
         imagen:"../imagenes/tapaCentralRedonda.png",
     },
     {
-        nombre:"Bochas",
+        nombre:"Boyas",
         imagen:"../imagenes/bochas.png",
     }
 ]
