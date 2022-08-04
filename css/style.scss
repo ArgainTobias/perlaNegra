@@ -80,6 +80,8 @@ header{
 
 footer{
     margin-top: 4rem;
+    position: sticky;
+    bottom: 0
 }
 
 @import 'base/index';

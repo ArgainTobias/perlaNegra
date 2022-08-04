@@ -93,6 +93,9 @@ header .menu-nav ul li a:hover {
 
 footer {
   margin-top: 4rem;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 }
 
 body {
@@ -388,7 +391,11 @@ h2, h4 {
             justify-content: end;
   }
   header .menu-nav label i {
-    font-size: 60px;
+    z-index: 100;
+    border: solid 2px white;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 50px;
     color: white;
     margin-top: 20%;
   }
@@ -409,7 +416,7 @@ h2, h4 {
     left: 0;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    z-index: 10;
+    z-index: 90;
   }
   header .menu-nav label {
     cursor: pointer;
