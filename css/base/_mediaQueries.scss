@@ -3,7 +3,7 @@
   header {
     grid-template-columns: 80% 20%;
     .div-img {
-      width: 40%;
+      width: 60%;
     }
     .menu-nav {
       label {
@@ -42,6 +42,12 @@
         display: flex;
       }
     }
+  }
+  p{
+    font-size: 1rem;
+  }
+  a{
+    font-size: 1rem;
   }
 
 }

@@ -20,6 +20,7 @@ main{
         width: 100%;
         h2{
             text-transform: uppercase;
+            font-size: 3rem;
         }
         h2:hover{
             span{
@@ -40,6 +41,7 @@ main{
         min-height: 10rem;
         text-align: center;
         border-radius: 10px;
+        padding: 1rem;
     }
 
     h5{
@@ -60,7 +62,26 @@ main{
     }
 }
 
+@media(max-width: 1024px){
+
+    .img{
+        .content{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
 @media(max-width:767px){
+
+    .img{
+        .content{
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
 
     #nosotros{
         img{

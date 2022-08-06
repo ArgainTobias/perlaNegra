@@ -8,14 +8,14 @@
 header{
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 100px;
+    height: 120px;
     place-content: center;
     border-bottom: solid 2px #fff;
 
     .div-img{
         a{
             img{
-                height: 80px;
+                height: 100px;
                 object-fit: cover;
                 width: 100%;
             }
@@ -38,11 +38,14 @@ header{
                 list-style: none;
                 color: white;
                 margin: 1.5rem;
+                margin-top: 2.2rem;
+                place-content: center;
                 a{
                     color: white;
                     display: grid;
                     place-content: center;
                     text-transform: uppercase;
+                    font-size: 1.3rem;
                 }
                 a:hover{
                     text-decoration: none;
@@ -51,6 +54,13 @@ header{
             }
         }
     }
+}
+
+p{
+    font-size: 1.2rem;
+}
+a{
+    font-size: 1.2rem;
 }
 
 .social{
