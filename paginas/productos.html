@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="../imagenes/perlaNegraLogo.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../js/productos.js"></script>
@@ -20,16 +21,16 @@
   <body class="body__productos">
 
     <header>
-      <div class="div-img animate__animated animate__fadeInLeft">
+      <div class="div-img" data-aos="fade-right">
         <a href="../index.html"><img src="../imagenes/perlaNegraLogo.ico" alt=""></a>
       </div>
       <div>
         <nav class="menu-nav">
           <label for="check">
-            <i class="material-symbols-outlined">menu</i>
+            <i class="material-symbols-outlined" data-aos="fade-right">menu</i>
           </label>
           <input type="checkbox" id="check">
-          <ul class="animate__animated animate__fadeInLeft">
+          <ul data-aos="fade-right">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="#">Kayaks</a></li>
@@ -44,39 +45,39 @@
 
         <section class="modeloUno">
 
-            <h2>Para una persona</h2>
+            <h2 data-aos="fade-right">Para una persona</h2>
 
-            <div class="container animate__animated animate__fadeInLeft">
-                <div class="imagenesModeloUno">
+            <div class="container" data-aos="fade-right">
+                <div class="imagenesModeloUno" data-aos="fade-right">
 
                 </div>
                 <div class="infoModeloUno">
-                    <h4>Info</h4>
-                    <p>CAPACIDAD: 1 persona</p>
-                    <p class="dimensiones">DIMENSIONES GENERALES:</p>
-                    <p>ESLORA = 3.22m, MANGA = 0.85m, PROFUNDIDAD = 0.4m, PESO = 27kg, CARGA MÁXIMA = 140kg</p>
-                    <p>+ Caja trasera, tapa tambucho delantero, respaldo ergonómico</p>
-                    <p>+ Agarres y herrajes plásticos, posacañas, cintas ajustables, remos</p>
+                    <h4 data-aos="fade-right">Info</h4>
+                    <p data-aos="fade-right">CAPACIDAD: 1 persona</p>
+                    <p data-aos="fade-right" class="dimensiones">DIMENSIONES GENERALES:</p>
+                    <p data-aos="fade-right">ESLORA = 3.22m, MANGA = 0.85m, PROFUNDIDAD = 0.4m, PESO = 27kg, CARGA MÁXIMA = 140kg</p>
+                    <p data-aos="fade-right">+ Caja trasera, tapa tambucho delantero, respaldo ergonómico</p>
+                    <p data-aos="fade-right">+ Agarres y herrajes plásticos, posacañas, cintas ajustables, remos</p>
                 </div>                    
             </div>
 
         </section>
 
-        <section class="modeloDos">
+        <section class="modeloDos" data-aos="fade-right">
 
-            <h2>Para dos o tres personas</h2>
+            <h2 data-aos="fade-right">Para dos o tres personas</h2>
 
-            <div class="container animate__animated animate__fadeInLeft">
-                <div class="imagenesModeloDos">
+            <div class="container" data-aos="fade-right">
+                <div class="imagenesModeloDos" data-aos="fade-right">
 
                 </div>
                 <div class="infoModeloDos">
-                    <h4>Info</h4>
-                    <p>CAPACIDAD: 2 personas</p>
-                    <p class="dimensiones">DIMENSIONES GENERALES:</p>
-                    <p>ESLORA = 4.22m, MANGA = 0.85m, PROFUNDIDAD = 0.4m, PESO = 36kg, CARGA MÁXIMA = 250kg</p>
-                    <p>+ Tapa tambuchos extremos, tapa tambucho central, respaldo ergonómico</p>
-                    <p>+ Agarres y herrajes plásticos, posacañas, cintas ajustables, remos</p>
+                    <h4 data-aos="fade-right">Info</h4>
+                    <p data-aos="fade-right">CAPACIDAD: 2 personas</p>
+                    <p class="dimensiones" data-aos="fade-right">DIMENSIONES GENERALES:</p>
+                    <p data-aos="fade-right">ESLORA = 4.22m, MANGA = 0.85m, PROFUNDIDAD = 0.4m, PESO = 36kg, CARGA MÁXIMA = 250kg</p>
+                    <p data-aos="fade-right">+ Tapa tambuchos extremos, tapa tambucho central, respaldo ergonómico</p>
+                    <p data-aos="fade-right">+ Agarres y herrajes plásticos, posacañas, cintas ajustables, remos</p>
                 </div>                    
             </div>
 
@@ -104,5 +105,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/88911ad60e.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay:500
+      });
+    </script>
   </body>
 </html>

@@ -59,7 +59,6 @@ header .menu-nav ul li a {
   display: grid;
   place-content: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
 }
 
 header .menu-nav ul li a:hover {
@@ -68,11 +67,11 @@ header .menu-nav ul li a:hover {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .social h5 {
@@ -138,7 +137,7 @@ main {
 
 .img .content h2 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .img .content h2:hover span {
@@ -220,13 +219,13 @@ h2, h4 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .imagenesModeloUno img:hover, .imagenesModeloDos img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .infoModeloUno p, .infoModeloDos p {
@@ -245,10 +244,6 @@ h2, h4 {
 }
 
 @media (max-width: 992px) {
-  .imagenesModeloUno, .imagenesModeloDos {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
   .imagenesModeloUno img, .imagenesModeloDos img {
     height: 150px;
     margin: 10px;
@@ -278,8 +273,12 @@ h2, h4 {
   text-transform: uppercase;
 }
 
+.nosotros p {
+  margin-bottom: 3.5rem;
+}
+
 .quienes, .que-hacemos {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -456,6 +455,11 @@ h2, h4 {
   }
 }
 
+.accesorios h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
 .accesorios .contenedor-divs-accesorio {
   display: -ms-grid;
   display: grid;
@@ -471,21 +475,16 @@ h2, h4 {
   display: grid;
   place-content: center;
   border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .accesorios .contenedor-divs-accesorio .div-accesorio img {
   height: 200px;
   border-radius: 5px;
   margin: 1rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.accesorios .contenedor-divs-accesorio .div-accesorio img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 
 .accesorios .contenedor-divs-accesorio .div-accesorio h4 {
@@ -494,10 +493,15 @@ h2, h4 {
   margin-bottom: 0.5rem;
 }
 
+.accesorios .contenedor-divs-accesorio .div-accesorio:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media (max-width: 767px) {
   .accesorios .contenedor-divs-accesorio {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (0.5fr)[1];
+        grid-template-columns: repeat(1, 0.5fr);
   }
 }
 /*# sourceMappingURL=style.css.map */

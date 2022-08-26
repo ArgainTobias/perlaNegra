@@ -34,6 +34,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../css/style.css" />
     <script defer src="../js/productos.js"></script>
@@ -41,7 +42,7 @@
   </head>
   <body>
     <header>
-      <div class="div-img animate__animated animate__fadeInLeft">
+      <div class="div-img" data-aos="fade-right">
         <a href="../index.html"
           ><img src="../imagenes/perlaNegraLogo.ico" alt=""
         /></a>
@@ -49,10 +50,10 @@
       <div>
         <nav class="menu-nav">
           <label for="check">
-            <i class="material-symbols-outlined">menu</i>
+            <i class="material-symbols-outlined" data-aos="fade-right">menu</i>
           </label>
           <input type="checkbox" id="check" />
-          <ul class="animate__animated animate__fadeInLeft">
+          <ul data-aos="fade-right">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="./productos.html">Kayaks</a></li>
@@ -64,8 +65,8 @@
     </header>
     <main>
       <section class="accesorios">
-        <h2>Nuestros accesorios</h2>
-        <div class="contenedor-divs-accesorio animate__animated animate__fadeInLeft">
+        <h2 data-aos="fade-right">Nuestros accesorios</h2>
+        <div class="contenedor-divs-accesorio" data-aos="fade-right">
 
         </div>
       </section>
@@ -103,5 +104,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/88911ad60e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay:500
+      });
+    </script>
   </body>
 </html>

@@ -3,6 +3,9 @@
   <head>
     <title>Perla Negra</title>
     <meta charset="utf-8">
+    <meta name="keywords" content="kayak, perla negra, tambucho, boyas, kayakismo, pesca, aventura">
+    <meta name="description" content="Perla negra es una empresa familiar ubicada en Buenos Aires, Argentina que ofrece productos relacionados al kayakismo de primera calidad.">
+    <meta name="robots" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="imagenes/perlaNegraLogo.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="./js/productos.js"></script>
@@ -18,16 +22,16 @@
   </head>
   <body>
       <header>
-        <div class="div-img animate__animated animate__fadeInLeft">
+        <div class="div-img" data-aos="fade-right">
           <a href="#"><img src="./imagenes/perlaNegraLogo.ico" alt=""></a>
         </div>
         <div>
           <nav class="menu-nav">
             <label for="check">
-              <i class="material-symbols-outlined">menu</i>
+              <i class="material-symbols-outlined" data-aos="fade-right">menu</i>
             </label>
             <input type="checkbox" id="check">
-            <ul class="animate__animated animate__fadeInLeft">
+            <ul data-aos="fade-right">
               <li><a href="#">Inicio</a></li>
               <li><a href="./paginas/nosotros.html">Nosotros</a></li>
               <li><a href="./paginas/productos.html">Kayaks</a></li>
@@ -43,14 +47,14 @@
         <section class="img-fondo">
             <div class="img container-fluid">
                 <div class="row">
-                    <div class="content animate__animated animate__fadeInLeft text-white">
+                    <div class="text-white" data-aos="fade-right">
                         <h2><span>- mas que un kayak -</span></h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="info">
+        <section class="info" data-aos="fade-right">
           <div class="primer-div-info container">
             <div class="row">
               <div class="pago-entrega col-md-4 col-sm-6">
@@ -95,5 +99,11 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/88911ad60e.js" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          delay:500
+        });
+      </script>
   </body>
 </html>
